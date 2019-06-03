@@ -10,7 +10,8 @@ CUR_DIR = os.path.dirname(os.path.abspath(__file__))
 DOC_DIR = os.path.join(CUR_DIR, 'docs')
 README = """
 # 华为公司文件 
-华为公司文件
+
+![自古英雄多磨难](http://xinsheng-image.huawei.com/cn/forumimage/showimage-5620951-17a9878d770570e3323759721ca5cc24_d0cfd11270d55ee0e2b16a3494fbb0b2-thumb.jpg)
 """
 
 
