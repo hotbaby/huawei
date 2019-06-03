@@ -21,7 +21,9 @@ def generate_toc():
             filepaths.append(os.path.join(root, name))
 
     filepaths = [path.split('huawei/docs/')[1] for path in filepaths]
+    filepaths = filter(lambda x: x.endswith('md'), filepaths)
     toc = {}
+
     for path in filepaths:
         year, filename = path.split('/')
         toc.setdefault(year, [])
