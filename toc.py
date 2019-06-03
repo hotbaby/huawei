@@ -31,8 +31,8 @@ def generate_toc():
 
     global README
     print README
-    for year in sorted(toc.keys()):
-        docs = sorted(toc[year])
+    for year in sorted(toc.keys(), reverse=True):
+        docs = sorted(toc[year], reverse=True)
         print '\n### %s' % year
         for doc in docs:
             print '* [%s]' % doc.split('.')[0] + '(' + os.path.join('docs', year, doc) + ')'
