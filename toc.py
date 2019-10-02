@@ -31,12 +31,12 @@ def generate_toc():
         toc[year].append(filename)
 
     global README
-    print README
+    print(README)
     for year in sorted(toc.keys(), reverse=True):
         docs = sorted(toc[year], reverse=True)
-        print '\n### %s' % year
+        print('\n### %s' % year)
         for doc in docs:
-            print '* [%s]' % doc.split('.')[0] + '(' + os.path.join('docs', year, doc) + ')'
+            print('* [%s]' % doc.split('.')[0] + '(' + os.path.join('docs', year, doc) + ')')
 
 
 if __name__ == '__main__':
