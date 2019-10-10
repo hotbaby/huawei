@@ -7,9 +7,10 @@ file_pattern = re.compile(r'\d{8}.+\.md')
 
 source_files = []
 
-for root, dirs, files in os.walk('.', topdown=False):
+for root, dirs, files in os.walk('.'):
     for f in files:
-        if file_pattern.match(f):
+        if file_pattern.match(f) and root == '.':
+            print(f)
             source_files.append(f)
 
 
