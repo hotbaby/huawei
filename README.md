@@ -1,7 +1,7 @@
 
 # 华为公司文件 
 
-![自古英雄多磨难](./imgs/伊尔2飞机.jpg)
+![自古英雄多磨难](https://processon.com/chart_image/5e357a9be4b0d27af1845d4c.png)
 
 
 ### 2020
